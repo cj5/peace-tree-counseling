@@ -1,0 +1,77 @@
+body {
+  font-family: $font-main;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  @include transform();
+  &:hover {
+    color: #ccc !important;
+    // text-decoration: underline;
+  }
+  &:visited {
+    color: #fff;
+  } 
+}
+
+header {
+  background: rgba(255,255,255,0.7);
+  padding: 20px 0;
+  a {
+    color: $color-main;
+  }
+}
+.header-title {  
+  display: inline-block;
+  width: 33%;
+}
+nav {
+  display: inline-block;
+  width: 66%;
+  ul {
+    margin: 0;
+    float: right;
+    li {
+      display: inline-block;
+      margin-left: 30px;
+      a {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+.current-menu-item a {
+  color: #ccc;
+}
+
+img.booger {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.content-filler {
+  height: 600px;
+}
+
+footer {
+  background: $color-main;
+  padding: 40px 0;
+  color: #fff;
+}
+
+///////////////////////////////////
+// Bootstrap Grid
+.container {
+	width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+// END Bootstrap Grid
