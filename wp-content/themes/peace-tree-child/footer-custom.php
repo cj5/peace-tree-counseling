@@ -15,8 +15,27 @@
 	<!-- #content -->
 
 	<footer>
-		<div class="container">
-			<p>Peace Tree Counseling</p>
+		<div class="contact">
+			<div class="container">
+				<div class="left ib">
+					<ul>
+						<li>Phone: 715-755-2233</li>
+						<li>Fax: 715-755-3966</li>
+						<li>peacetree@email.new</li>
+					</ul>
+				</div>
+				<div class="right ib">
+					<ul>
+						<li><a href="">Client Satisfaction Survey</a></li>
+						<li><a href="">Webmail</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<p>&copy; 2018 | Peace Tree Counseling</p>					
+			</div>
 		</div>
 	</footer>
 </div><!-- #page -->
