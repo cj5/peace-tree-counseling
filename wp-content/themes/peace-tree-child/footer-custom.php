@@ -19,14 +19,14 @@
 			<div class="container">
 				<div class="left ib">
 					<ul>
-						<li>Phone: 715-755-2233</li>
-						<li>Fax: 715-755-3966</li>
-						<li>peacetree@email.new</li>
+						<li><span class="bold">Phone:</span> <a href="tel:715-755-2233">715-755-2233</a></li>
+						<li><span class="bold">Fax:</span> 715-755-3966</li>
+						<li><a href="">peacetree@email.new</a></li>
 					</ul>
 				</div>
 				<div class="right ib">
 					<ul>
-						<li><a href="">Client Satisfaction Survey</a></li>
+						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd2-2gSoGr_5JZCJsWu3J8ViGPkkKK7_0FxppQXOp3vZ-HhNw/viewform" target="_blank">Client Satisfaction Survey</a></li>
 						<li><a href="">Webmail</a></li>
 					</ul>
 				</div>
