@@ -19,9 +19,13 @@ Template Name: Contact
 get_header('custom');
 ?>
 
-<section class="margins contact-us">
+<div class="page-title">
   <div class="container">
-    <h2 class="heading mg-bt-xl"><?php the_title() ?></h2>
+    <h2 class="heading"><?php the_title() ?></h2>
+  </div>
+</div>
+<section class="margins contact-us">
+  <div class="container">    
     <div class="contact-copy">      
       <div class="locations">
         <h3>Locations:</h3>

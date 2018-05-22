@@ -1,26 +1,26 @@
 body {
   font-family: $font-main;
-  font-size: 22px;
+  font-size: 18px;
 }
 h1,h2,h3,h4 {
   margin: 0;
   padding: 0;  
 }
 h1 {
-  font-size: 42px;
-  line-height: 42px;
-}
-h2 {
   font-size: 36px;
   line-height: 36px;
 }
-h3 {
+h2 {
   font-size: 32px;
   line-height: 32px;
 }
-h4 {
+h3 {
   font-size: 28px;
   line-height: 28px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 24px;
 }
 ul {
   margin: 0;
@@ -28,13 +28,14 @@ ul {
   list-style: none;
 }
 li {
-  font-size: 24px;
+  font-size: 18px;
 }
 p {
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 0 40px;
 }
-a {  
+a {
+  font-size: 18px;
   text-decoration: none;
   @include transform();
   &:hover {
@@ -111,7 +112,7 @@ nav {
     float: right;
     li {
       display: inline-block;
-      margin-left: 40px;
+      margin-left: 30px;
       // border-bottom: 6px solid transparent;
       padding: 40px 0;
       @include transform();
@@ -120,7 +121,7 @@ nav {
       }
       a {
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 20px;
         color: $color-main;
       }
     }
@@ -155,11 +156,11 @@ section.hero {
 }
 
 section.top-margin {
-  margin: 100px 0 0;
+  margin: 80px 0 0;
   overflow: hidden;
 }
 section.margins {
-  margin: 100px 0 120px;
+  margin: 80px 0 100px;
   overflow: hidden;
 }
 .home-img {
@@ -175,6 +176,14 @@ section.margins {
 .border-bottom {
   border-bottom: 2px solid #ccc;
   padding-bottom: 50px;
+}
+
+.page-title {
+  background: rgba(82,153,150,0.2);
+  h2 {
+    margin: 30px 0;
+    color: #404040;
+  }
 }
 
 .location {
@@ -213,16 +222,16 @@ section.margins {
   margin-right: 2%;
   margin-bottom: 30px;
   background: rgba(82,153,150,0.2);
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
   @include transform();
   img {
-    max-width: 320px;
+    max-width: 290px;
     margin-top: 30px;
     margin-bottom: 10px;
   }
   p {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #404040;
   }
   &:hover {
@@ -236,7 +245,7 @@ section.margins {
     margin-right: 4%;
   }
   .right {
-    width: 70%;
+    width: 75%;
     vertical-align: top;
   }
   h4 {
@@ -247,6 +256,9 @@ section.margins {
 }
 
 .scheduling {
+  .intro h4 {
+    margin: 0 0 30px;
+  }
   h4 {
     margin: 50px 0 30px;
     color: $color-main;
@@ -266,9 +278,16 @@ section.margins {
     width: 100%;
     // margin-top: 50px;
   }
+  .upper-section {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 50px;
+    h4 {
+      margin-top: 0;
+    }
+  }
   .lower-section {
-    max-width: 800px;
-    margin: auto;
+    max-width: 700px;
+    margin: 10px auto 100px;
   }
   a {
     color: $color-main;
@@ -330,13 +349,16 @@ section.margins {
     width: 250px;
     display: inline-block;
   }
+  a {
+    color: $color-main;
+  }
   iframe {
     margin: 30px 0 80px;
   }
 }
-.hours h3, .contact-info h3 {
-  color: $color-main;
-}
+// .hours h3, .contact-info h3 {
+//   color: $color-main;
+// }
 .hours ul {
   max-width: 470px;
 }
@@ -344,7 +366,7 @@ section.margins {
 footer {
   .contact {
     background: #ddd;
-    padding: 60px 0;
+    padding: 40px 0;
     .left {
       width: 75%;
       margin: 0;
@@ -377,7 +399,7 @@ footer {
 // Bootstrap Grid
 .container {
   overflow: hidden;
-	width: 1400px;
+	width: 1140px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;

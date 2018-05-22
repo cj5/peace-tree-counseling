@@ -21,7 +21,11 @@ get_header('custom');
 
 <section class="hero">
   <div class="hero-img">
-    <img class="hero" src="/wp-content/uploads/2018/05/railroad_tracks_through_forest-crop.jpg" alt="">
+    <?php 
+    $image = get_field('home_main_image');
+    if( !empty($image) ): ?>
+      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <?php endif; ?>
     <div class="hero-img-overlay"></div>
   </div>
   <div class="container">

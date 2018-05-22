@@ -19,11 +19,15 @@ Template Name: Provider Details
 get_header('custom');
 ?>
 
+<div class="page-title">
+  <div class="container">
+  <?php if( get_field('provider_title') ): ?>
+      <h2 class="heading"><?php the_field('provider_title'); ?></h2>
+    <?php endif; ?>
+  </div>
+</div>
 <section class="margins provider-details">
   <div class="container">
-    <?php if( get_field('provider_title') ): ?>
-      <h2 class="heading mg-bt-lg"><?php the_field('provider_title'); ?></h2>
-    <?php endif; ?>
     <div class="provider-img left ib">
       <?php
       $image = get_field('provider_image');

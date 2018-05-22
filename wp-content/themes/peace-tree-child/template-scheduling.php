@@ -19,16 +19,21 @@ Template Name: Scheduling
 get_header('custom');
 ?>
 
-<section class="scheduling top-margin">
+<div class="page-title">
   <div class="container">
-    <h2 class="heading mg-bt-xl"><?php the_title() ?></h2>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <?php the_content() ?>
-    <?php endwhile; else : ?>
-    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    <?php endif; ?>
-
-    <section class="upper-section margins">
+    <h2 class="heading"><?php the_title() ?></h2>
+  </div>
+</div>
+<section class="scheduling top-margin">  
+  <div class="container">
+    <div class="intro">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php the_content() ?>
+      <?php endwhile; else : ?>
+      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+    </div>
+    <section class="upper-section top-margin">
       <div class="left ib">
         <?php
         $image = get_field('scheduling_image');
@@ -43,7 +48,7 @@ get_header('custom');
       </div>
     </section>
 
-    <section class="lower-section mg-bt-xxl">
+    <section class="lower-section margins">
       <?php if( get_field('scheduling_lower_text_section_1') ): ?>
         <p><?php the_field('scheduling_lower_text_section_1'); ?></p>
       <?php endif; ?>

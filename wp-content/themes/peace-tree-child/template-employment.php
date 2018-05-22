@@ -19,9 +19,13 @@ Template Name: Employment
 get_header('custom');
 ?>
 
+<div class="page-title">
+  <div class="container">
+    <h2 class="heading"><?php the_title() ?></h2>
+  </div>
+</div>
 <section class="margins employment">
   <div class="container">
-    <h2 class="heading mg-bt-xl"><?php the_title() ?></h2>
     <div class="employment-copy">
       <div class="left ib">
         <?php
