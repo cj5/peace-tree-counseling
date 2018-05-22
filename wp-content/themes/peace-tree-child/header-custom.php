@@ -31,7 +31,7 @@
 			<div class="header-title">
 				<a href="/"><h1>Peace Tree Counseling</h1></a>
 			</div>
-			<nav>
+			<nav class="desktop">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -39,6 +39,18 @@
 				) );
 				?>
 			</nav>
+			<div id="navicon"></div>
+			<div id="mobile-nav">
+				<div id="close"></div>
+				<nav class="mobile">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+					?>
+				</nav>
+			</div>
 		</div>
 	</header>
 

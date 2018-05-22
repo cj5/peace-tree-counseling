@@ -1,0 +1,171 @@
+// MEDIA QUERIES
+
+//~~~~~~~~~~~~~~~~~~~ 1200px
+@media (max-width: 1200px) {
+  body, p, li {
+    font-size: 16px;
+  }
+  .header-title h1 {
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .provider-image {
+    img {
+      max-width: 230px;
+    }
+    p {
+      font-size: 12px;
+    }
+    p strong {
+      font-size: 14px;
+    }
+  }
+  
+  // Bootstrap Grid
+  .container {
+    overflow: hidden;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 992px
+@media (max-width: 992px) {
+  .header-title {
+    padding: 40px 0;
+  }
+  nav.desktop {
+    display: none;
+  }
+  #mobile-nav {
+    background: $color-main;
+    border-left: 3px solid #ccc;
+    border-top: 5px solid #ccc;
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    @include transition();
+    #close {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 28px;
+      left: 14px;
+      &:after {
+        background: #fff;
+        content: "";
+        height: 30px;
+        border-left: 2px solid #fff;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 28px;
+      }
+      &:before {
+        content: '';
+        height: 30px;
+        border-left: 2px solid #fff;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 28px;
+      }
+    }
+    nav {
+      width: 100%;
+    }
+    ul {
+      top: 57px;
+      width: 100%;
+    }
+    li {
+      width: 100%;
+      padding: 30px 0 30px 30px;
+      margin: 0;
+      border-top: 3px solid #ccc;      
+    }
+    a {
+      color: #fff;
+    }
+  }
+  #navicon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 22px;
+    float: right;
+    cursor: pointer;    
+    &:before {
+      content: "";
+      position: absolute;
+      @include transition();
+      left: 0;
+      top: 10px;
+      cursor: pointer;
+      width: 30px;
+      height: 3px;
+      background: $color-main;
+      box-shadow: 
+        0 8px 0 0 $color-main,
+        0 16px 0 0 $color-main;
+    }
+    &:hover:before {
+      background: #404040;
+      box-shadow: 
+        0 8px 0 0 #404040,
+        0 16px 0 0 #404040;
+    }   
+  }
+
+  // Bootstrap Grid
+  .container {
+    overflow: hidden;
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 768px
+@media (max-width: 768px) {
+  // Bootstrap Grid
+  .container {
+    overflow: hidden;
+    width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 576px
+@media (max-width: 576px) {
+  // Bootstrap Grid
+  .container {
+    overflow: hidden;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 420px
+@media (max-width: 420px) {
+  
+}

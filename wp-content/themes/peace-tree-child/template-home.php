@@ -26,7 +26,7 @@ get_header('custom');
     if( !empty($image) ): ?>
       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
     <?php endif; ?>
-    <div class="hero-img-overlay"></div>
+    <!-- <div class="hero-img-overlay"></div> -->
   </div>
   <div class="container">
     <div class="mission">
