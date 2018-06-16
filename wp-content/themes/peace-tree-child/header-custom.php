@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'peace-tree' ); ?></a>
-
+	
 	<header>
 		<div class="container">
 			<div class="header-title">
@@ -53,5 +53,6 @@
 			</div>
 		</div>
 	</header>
+	<div class="header-fill"></div>
 
 	<!-- <div id="content" class="site-content"> -->

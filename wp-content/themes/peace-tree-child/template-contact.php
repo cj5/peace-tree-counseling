@@ -28,7 +28,7 @@ get_header('custom');
   <div class="container">    
     <div class="contact-copy">      
       <div class="locations">
-        <h3>Locations:</h3>
+        <h3>Locations</h3>
         <div class="left ib">
         <?php if( get_field('location_1') ): ?>
           <p><?php the_field('location_1'); ?></p>
@@ -43,7 +43,7 @@ get_header('custom');
         </div>
       </div>
       <div class="hours left ib">
-        <h3>Hours of Operation:</h3>
+        <h3>Hours of Operation</h3>
         <ul>
           <li><span class="bold">Monday:</span>
             <?php if( get_field('monday_hours') ): ?>
@@ -83,7 +83,7 @@ get_header('custom');
         </ul>
       </div>
       <div class="contact-info right ib">
-        <h3>Contact Info:</h3>
+        <h3>Contact Info</h3>
         <?php if( get_field('contact_info') ): ?>
           <p><?php the_field('contact_info'); ?></p>
         <?php endif; ?>

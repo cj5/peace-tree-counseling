@@ -27,21 +27,34 @@ jQuery(document).ready(function($) {
 
   $('#navicon').click(function() {
     $('#mobile-nav').css('right', 0);
-    $('body').css('right', 349);
+    // $('#mobile-nav').css('display', 'block');
+    $('body').css('right', 300);
   });
   $('html').click(function() {
     if ($('#mobile-nav').css('right') === '0px') {      
-      $('#mobile-nav').css('right', -450);
+      $('#mobile-nav').css('right', -300);
+      // $('#mobile-nav').css('display', 'none');
       $('body').css('right', 0);
-      // $('#header').css('left', 0);
-      // $('#hero img').css('left', 0);
     }
   });
+
+  // let maxHeight = 0;
+  // $('.provider-image').each(function(){
+  //    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  // });
+  // $('.provider-image').height(maxHeight);
 
   const updateContainer = () => {
     let heroHt = $('.hero-img img').height();
     $('.hero-img-overlay').css('height', heroHt);
     $('.hero-img').css('height', heroHt + 5);
+
+    // $('.provider-image').css('height', 'initial');
+    // let maxHeight = 0;
+    // $('.provider-image').each(function(){
+    //    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+    // });
+    // $('.provider-image').height(maxHeight);
   }
 
   $(window).resize(function() {

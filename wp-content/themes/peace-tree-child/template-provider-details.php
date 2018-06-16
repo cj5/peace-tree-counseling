@@ -27,7 +27,7 @@ get_header('custom');
   </div>
 </div>
 <section class="margins provider-details">
-  <div class="container">
+  <div class="container">    
     <div class="provider-img left ib">
       <?php
       $image = get_field('provider_image');
@@ -42,7 +42,7 @@ get_header('custom');
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
     </div>
-    <div class="office-locations mg-tp-xl">
+    <div class="office-locations mg-tp-lg">
       <h4>Office Locations</h4>
       <?php if( get_field('office_locations') ): ?>
         <p><?php the_field('office_locations'); ?></p>

@@ -45,93 +45,107 @@ get_header('custom');
 
 <!-- PROVIDER 1 -->
     <a href="<?php the_field('provider_1_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_1_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_1_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_1_description') ): ?>
+        <p><?php the_field('provider_1_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_1_description') ): ?>
-      <p><?php the_field('provider_1_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 2 -->
     <a href="<?php the_field('provider_2_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_2_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_2_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_2_description') ): ?>
+        <p><?php the_field('provider_2_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_2_description') ): ?>
-      <p><?php the_field('provider_2_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 3 -->
     <a href="<?php the_field('provider_3_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_3_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_3_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_3_description') ): ?>
+        <p><?php the_field('provider_3_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_3_description') ): ?>
-      <p><?php the_field('provider_3_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 4 -->
     <a href="<?php the_field('provider_4_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_4_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_4_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_4_description') ): ?>
+        <p><?php the_field('provider_4_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_4_description') ): ?>
-      <p><?php the_field('provider_4_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 5 -->
     <a href="<?php the_field('provider_5_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_5_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_5_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_5_description') ): ?>
+        <p><?php the_field('provider_5_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_5_description') ): ?>
-      <p><?php the_field('provider_5_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 6 -->
     <a href="<?php the_field('provider_6_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_6_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_6_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_6_description') ): ?>
+        <p><?php the_field('provider_6_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_6_description') ): ?>
-      <p><?php the_field('provider_6_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
 <!-- PROVIDER 7 -->
     <a href="<?php the_field('provider_7_link'); ?>">
-    <div class="provider-image ib">
-    <?php
-      $image = get_field('provider_7_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+    <div class="provider-img-wrapper ib">
+      <div class="provider-image ib">
+      <?php
+        $image = get_field('provider_7_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+        <?php if( get_field('provider_7_description') ): ?>
+        <p><?php the_field('provider_7_description'); ?></p>
       <?php endif; ?>
-      <?php if( get_field('provider_7_description') ): ?>
-      <p><?php the_field('provider_7_description'); ?></p>
-    <?php endif; ?>
+      </div>
     </div>
     </a>
     

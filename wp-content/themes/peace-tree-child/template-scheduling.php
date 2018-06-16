@@ -33,19 +33,19 @@ get_header('custom');
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
     </div>
-    <section class="upper-section top-margin">
+    <section class="upper-section top-margin">      
       <div class="left ib">
         <?php
         $image = get_field('scheduling_image');
         if( !empty($image) ): ?>
           <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endif; ?>
-      </div>
+      </div>  
       <div class="right ib">
         <?php if( get_field('scheduling_upper_text') ): ?>
           <p><?php the_field('scheduling_upper_text'); ?></p>
         <?php endif; ?>
-      </div>
+      </div>      
     </section>
 
     <section class="lower-section margins">

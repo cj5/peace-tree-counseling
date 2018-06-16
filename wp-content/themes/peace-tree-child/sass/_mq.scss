@@ -36,9 +36,24 @@
 }
 
 //~~~~~~~~~~~~~~~~~~~ 992px
-@media (max-width: 992px) {
+@media (max-width: 992px) {  
+  header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 999999999999;
+	}
+	.header-fill {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 95px;
+	}
   .header-title {
     padding: 40px 0;
+  }
+  .mission h2 {
+    font-size: 28px;
   }
   nav.desktop {
     display: none;
@@ -48,10 +63,11 @@
     border-left: 3px solid #ccc;
     border-top: 5px solid #ccc;
     position: fixed;
-    width: 350px;
+    width: 300px;
     height: 100%;
     top: 0;
     z-index: 99;
+    display: block;
     @include transition();
     #close {
       cursor: pointer;
@@ -59,7 +75,7 @@
       height: 30px;
       position: relative;
       top: 28px;
-      left: 14px;
+      left: 27px;      
       &:after {
         background: #fff;
         content: "";
@@ -67,7 +83,8 @@
         border-left: 2px solid #fff;
         position: absolute;
         transform: rotate(45deg);
-        left: 28px;
+        left: 14px;
+        @include transition();
       }
       &:before {
         content: '';
@@ -75,24 +92,45 @@
         border-left: 2px solid #fff;
         position: absolute;
         transform: rotate(-45deg);
-        left: 28px;
+        left: 14px;
+        @include transition();
+      }
+      &:hover:after {
+        background: #404040;
+        border-left: 2px solid #404040;
+      }
+      &:hover:before {
+        background: #404040;
+        border-left: 2px solid #404040;
       }
     }
     nav {
+      position: relative;
       width: 100%;
-    }
-    ul {
       top: 57px;
+    }
+    ul {      
       width: 100%;
+      top: 0;
     }
     li {
       width: 100%;
-      padding: 30px 0 30px 30px;
+      padding: 0;
       margin: 0;
-      border-top: 3px solid #ccc;      
+      border-top: 3px solid #ccc;
+      &:last-child {
+        border-bottom: 3px solid #ccc;
+      }      
     }
     a {
       color: #fff;
+      padding: 20px 0 20px 30px;
+      width: 100%;
+      display: block;
+      &:hover {
+        background-color: #fff;
+        color: $color-main;
+      }
     }
   }
   #navicon {
@@ -124,6 +162,38 @@
         0 16px 0 0 #404040;
     }   
   }
+  .location {
+    .left {
+      width: 100%;
+      .col-1 {
+        margin-bottom: 50px;
+        margin-right: 3%;
+      }
+      .col-2 {
+        margin-right: 0;
+        width: 49%;        
+      }
+    }
+    .right {
+      width: 47%;
+      float: none;
+    }
+  }
+  .provider-img-wrapper {
+    width: 47%;
+    margin: 0 1% 24px;
+  }
+  footer .contact {
+    .left {
+      width: 66%;
+    }
+    .right {
+      width: 33%;
+    }
+  }
+  .contact-us li span.bold {
+    width: 150px;
+  }
 
   // Bootstrap Grid
   .container {
@@ -139,6 +209,93 @@
 
 //~~~~~~~~~~~~~~~~~~~ 768px
 @media (max-width: 768px) {
+  section.margins {
+    margin: 60px 0 75px;
+  }
+  section.top-margin {
+    margin: 60px 0 0;
+  }
+  .mission h2 {
+    font-size: 20px;
+  }
+  .home-img {
+    width: 100%;
+    text-align: center;    
+    img {
+      max-width: 200px;          
+    }
+  }
+  .home-copy .copy {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .heading {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .provider-img-wrapper {
+    padding: 0 10px 10px;
+    margin: 0 1% 14px;
+    img {
+      max-width: 190px;
+    }
+  }
+  .provider-img.left {
+    width: 100%;
+    margin-bottom: 50px;
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .providers-copy.right {
+    width: 100%;
+  }
+  .scheduling {
+    .left {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+      img {
+        max-width: 200px;
+      }
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  .employment {
+    .left {
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      img {
+        max-width: 200px;
+      }
+    }
+    .right {
+      width: 100%;      
+    }
+  }
+  .contact-us .hours.left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact-us li span.bold {
+    width: 300px;
+  }
+  .contact-us .contact-info.right {
+    width: 100%;
+  }
+  footer .contact {
+    .left {
+      width: 54%;
+    }
+    .right {
+      width: 45%;
+    }
+  }
+  
   // Bootstrap Grid
   .container {
     overflow: hidden;
@@ -153,6 +310,43 @@
 
 //~~~~~~~~~~~~~~~~~~~ 576px
 @media (max-width: 576px) {
+  section.margins {
+    margin: 50px 0 60px;
+  }
+  section.top-margin {
+    margin: 50px 0 0;
+  }  
+  .location {
+    .left {
+      .col-1 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .col-2 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .right {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  .provider-img-wrapper {
+    width: 100%;
+  }
+  .provider-image {
+    width: 270px;
+  }
+  .contact-us {
+    .left, .right {
+      width: 100%;
+    }
+    .left iframe {
+      margin-bottom: 50px;
+    }
+  }
+  
   // Bootstrap Grid
   .container {
     overflow: hidden;
@@ -165,7 +359,85 @@
   // END Bootstrap Grid
 }
 
+//~~~~~~~~~~~~~~~~~~~ 530px
+@media (max-width: 530px) {
+  .mission h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact-us li span.bold {
+    width: 120px;
+  }
+  .contact-us .hours.left {
+    width: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .contact {
+    .left {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .right {
+      border-top: 2px solid #ccc;
+      padding-top: 30px;
+      width: 100%;
+      li {
+        float: none;
+        &:first-child {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~ 480px
+@media (max-width: 480px) {
+  .header-title h1 {
+    font-size: 24px;
+  }
+  .mission h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 //~~~~~~~~~~~~~~~~~~~ 420px
 @media (max-width: 420px) {
-  
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .page-title h2 {
+    margin: 22px 0;
+  }
+  .provider-img-wrapper {
+    margin: 0 0 14px;
+  }
+  .provider-image {
+    width: 255px;
+  }
+  .contact-us .hours.left p {
+    font-size: 14px;
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~ 380px
+@media (max-width: 380px) {
+  .header-title h1 {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+//~~~~~~~~~~ height < 450px
+@media (max-height: 450px) {
+  #mobile-nav a {    
+    padding: 8px 0 8px 30px;
+  }
 }

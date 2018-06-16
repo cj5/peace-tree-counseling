@@ -38,20 +38,20 @@ get_header('custom');
 </section>
 
 <section class="top-margin home-copy">
-  <div class="container border-bottom">
-    <div class="home-img ib">
-      <?php 
-      $image = get_field('home_secondary_image');
-      if( !empty($image) ): ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-      <?php endif; ?>
-    </div>
+  <div class="container border-bottom">    
     <div class="copy ib">
       <?php if( get_field('home_main_content') ): ?>
         <p><?php the_field('home_main_content'); ?></p>
       <?php endif; ?>
       <?php if( get_field('red_text') ): ?>
         <p class="attention"><?php the_field('red_text'); ?></p>
+      <?php endif; ?>
+    </div>
+    <div class="home-img ib">
+      <?php 
+      $image = get_field('home_secondary_image');
+      if( !empty($image) ): ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
       <?php endif; ?>
     </div>
   </div>

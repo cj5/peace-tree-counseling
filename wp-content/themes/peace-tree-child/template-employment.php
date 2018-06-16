@@ -26,14 +26,7 @@ get_header('custom');
 </div>
 <section class="margins employment">
   <div class="container">
-    <div class="employment-copy">
-      <div class="left ib">
-        <?php
-        $image = get_field('employment_image');
-        if( !empty($image) ): ?>
-          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-        <?php endif; ?>
-      </div>
+    <div class="employment-copy">      
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="right ib">
         <?php the_content() ?>
@@ -41,6 +34,13 @@ get_header('custom');
       <?php endwhile; else : ?>
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
+      <div class="left ib">
+        <?php
+        $image = get_field('employment_image');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 </section>
